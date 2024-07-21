@@ -14,7 +14,7 @@
 }
 
 #navbar .logo img {
-  height: 7rem;
+  height: 6rem;
   width: 100%;
   cursor: pointer;
 }
@@ -83,11 +83,46 @@
   gap: 1rem;
   font-size: large;
 }
-#mid p{
-    text-align: center;
+#mid p {
+  text-align: center;
 }
+
+/* END STYLING STARTS HERE----> */
 #end {
   padding: 3rem;
+  width: 100%;
+  background-color: rgb(217, 214, 223);
+}
+#end #flex {
+  display: flex;
+  /* border: 1px solid black; */
+  gap: 3rem;
+  width: 100%;
+}
+#flex .end-flex {
+  /* border: 1px solid black; */
+  padding: 2rem 0;
+  width: 33%;
+}
+#flex .end-flex img {
+  width: 100%;
+  height: 50%;
+}
+
+#flex .end-flex h4 {
+  padding: 1rem 0;
+}
+
+#flex .end-flex button {
+  margin: 2rem 0;
+}
+
+#flex .end-flex button {
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: black;
+  border-style: none;
+  font-weight: 900;
 }
 
 @media (max-width: 980px) {
@@ -115,12 +150,28 @@
   }
 }
 
+@media (max-width: 786px) {
+  #end #flex {
+    display: flex;
+    /* border: 1px solid black; */
+    gap: 0.5rem;
+    width: 100%;
+  }
+  #flex .end-flex button {
+    margin: 0.5rem 0;
+  }
+  #flex .end-flex img {
+    width: 100%;
+    height: 30%;
+  }
+}
+
 @media (max-width: 768px) {
   #navbar .logo img {
     height: 3rem;
   }
   #navbar .nav-end div {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 50%;
     padding: 0.5rem;
     margin: 0 0.3rem;
@@ -150,10 +201,17 @@
     font-size: large;
     font-weight: 900;
   }
+  #flex .end-flex button{
+    padding: 0;
+}
 }
 
 @media (max-width: 390px) {
   #navbar .nav-center > li:nth-child(1) {
     display: none;
+  }
+  
+  #flex .end-flex button{
+      padding: 0;
   }
 }
