@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+#navbar .logo img {
+  height: 7rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+#navbar .nav-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar .nav-center li {
+  padding: 0 1rem;
+  list-style: none;
+  font-size: x-large;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+#navbar .nav-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+#navbar .nav-end div {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 0 0.3rem;
+  cursor: pointer;
+}
+
+/*  <------ NAVBAR STYLING ENDS HERE */
+
+/* TOP STYLING STARTS HERE ----> */
+
+#top {
+  background-image: url("./Images/heroimg.jpg");
+  position: relative;
+  width: 100%;
+}
+#top img {
+  width: 100%;
+}
+#top button {
+  position: absolute;
+  top: 85%; /* Adjust as needed */
+  left: 5%; /* Adjust as needed */
+  z-index: 1; /* Ensure the button is above the image */
+  padding: 1rem 4rem;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(
+    94.68deg,
+    rgb(7, 7, 7) 2.51%,
+    rgb(99, 99, 99) 56.42%
+  );
+  border-style: none;
+  font-size: x-large;
+  font-weight: 900;
+}
+
+#mid {
+  background-color: rgb(178, 178, 178);
+  display: flex;
+  padding: 2rem;
+  gap: 1rem;
+  font-size: large;
+}
+#mid p{
+    text-align: center;
+}
+#end {
+  padding: 3rem;
+}
+
+@media (max-width: 980px) {
+  #navbar .nav-center > li:nth-last-child(1) {
+    display: none;
+  }
+  #navbar .nav-center > li:nth-last-child(2) {
+    display: none;
+  }
+  #top button {
+    position: absolute;
+    top: 85%; /* Adjust as needed */
+    left: 5%; /* Adjust as needed */
+    z-index: 1; /* Ensure the button is above the image */
+    padding: 1rem 4rem;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(
+      94.68deg,
+      rgb(7, 7, 7) 2.51%,
+      rgb(99, 99, 99) 56.42%
+    );
+    border-style: none;
+    font-size: x-large;
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 768px) {
+  #navbar .logo img {
+    height: 3rem;
+  }
+  #navbar .nav-end div {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin: 0 0.3rem;
+  }
+  #navbar .nav-center > li:nth-last-child(2) {
+    display: none;
+  }
+  #navbar .nav-center > li {
+    font-size: medium;
+  }
+  #navbar .nav-end {
+    display: none;
+  }
+  #top button {
+    position: absolute;
+    top: 75%; /* Adjust as needed */
+    left: 5%; /* Adjust as needed */
+    z-index: 1; /* Ensure the button is above the image */
+    padding: 0.5rem 2rem;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(
+      94.68deg,
+      rgb(7, 7, 7) 2.51%,
+      rgb(99, 99, 99) 56.42%
+    );
+    border-style: none;
+    font-size: large;
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 390px) {
+  #navbar .nav-center > li:nth-child(1) {
+    display: none;
+  }
+}
